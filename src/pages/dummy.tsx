@@ -1,9 +1,9 @@
 function Hello() {
-    return (
-        <>
-        this is a page
-        </>
-    )
+  return (
+    <>
+      <h2>Hello</h2>
+    </>
+  );
 }
 
 export default Hello;
