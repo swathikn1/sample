@@ -1,6 +1,6 @@
 .hello {
     display: flex;
-    background-color: black;
+    background-color:red;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -18,7 +18,13 @@
     padding: 20px;
     justify-content: center;
     height: 1000px;
+}
+div{
+    text-align: center;
+    margin-top: 50px;
+    display: inline;
+}
 
-    
-
+h2{
+    display: inline;
 }

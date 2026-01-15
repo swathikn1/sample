@@ -1,7 +1,7 @@
 function Hello() {
     return (
         <>
-        this is a page
+        Counter Count 
         </>
     )
 }
