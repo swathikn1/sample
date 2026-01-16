@@ -1,21 +1,20 @@
-import { Button } from 'antd';
 import './App.css'
 import Hello from './pages/dummy';
-import Side from './pages/sbar';
+import '../src/pages/dummy.css'
+// import Side from './pages/sbar';
 
 
 function App(){
   return(
     <div className='app'> 
     <div className='hello'>
-      <Hello />
-      <h1 id='hello1'>Button</h1>
-      <Button type='primary'>Click Me</Button>
-</div>
+      <h1>Todo List</h1>
 
-  <div className='sidebar'>
+        <Hello />
+</div>
+  {/* <div className='sidebar'>
     <Side />
-  </div>
+  </div> */}
 
 </div>
   );
