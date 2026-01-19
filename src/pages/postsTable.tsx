@@ -1,6 +1,8 @@
+
 import { useState, useEffect } from "react";
 import { Table } from "antd";
 import "antd/dist/reset.css";
+import axios from "axios";
 
 type Item = {
   key: number;
@@ -10,17 +12,21 @@ type Item = {
   body:string;
 }
 
-function Hello() {
+function FetchData() {
   const [data, setData] = useState<Item[]>([]);
   const [page , setPage] = useState(1);
   const [limit, setLimit] = useState(10);
 
+  
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=${limit}`)
-      .then((res) => res.json())
-      .then((json: Item[]) => setData(json.map((item) => ({ ...item, key: item.id })))
-      );
-  }, [page,limit]);
+    axios.get<Item[]>("https://jsonplaceholder.typicode.com/posts", {
+        params: {_page: page,_limit: limit,},
+      })
+      .then((response) => {setData(response.data.map((item) => ({...item,key: item.id,}))
+        );
+      });
+  }, [page, limit]);
+
 
   
   const columns = [
@@ -45,4 +51,4 @@ function Hello() {
   />;
 }
 
-export default Hello;
+export default FetchData;

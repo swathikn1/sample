@@ -1,21 +1,15 @@
-import { Button } from 'antd';
 import './App.css'
-import Hello from './pages/dummy';
-import Side from './pages/sbar';
+import FetchData from './pages/postsTable';
 
 
 function App(){
   return(
     <div className='app'> 
     <div className='hello'>
-      <Hello />
-      <h1 id='hello1'>Button</h1>
-      <Button type='primary'>Click Me</Button>
+      <FetchData />
 </div>
 
-  <div className='sidebar'>
-    <Side />
-  </div>
+
 
 </div>
   );
