@@ -1,24 +1,293 @@
-.hello {
-    display: flex;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.app{
+html, body {
+    height: 100%;
+}
+
+body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
-.sidebar {
-    width: 200px;
-    background-color: blue;
-    padding: 20px;
+.page {
+    flex: 1;
+}
+
+.site-footer {
+    margin-top: auto;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #fdfcfc;
+}
+
+
+.navbar img{
+    width: 50px;
+}
+
+nav a {
+    margin-left: 35px;
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    position: relative;
+}
+
+.hero {
+    height: 80vh;
+    background-image: url("src/images/pizza.jpg");
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+.hero-content {
+    position: relative;
+    color: #fff;
+    max-width: 600px;
+    padding: 120px 80px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+
+.services {
+    text-align: center;
+    padding: 80px 0;
+}
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+.slider {
+    width: 320px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+
+.slides {
+    display: flex;
+    transition: transform 0.6s ease;
+    width: 960px;
+}
+
+
+
+.card {
+    min-width: 320px;
+    background: #f3f3f3;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#s1:checked ~ .slider .slides {
+    transform: translateX(0);
+}
+
+#s2:checked ~ .slider .slides {
+    transform: translateX(-320px);
+}
+
+#s3:checked ~ .slider .slides {
+    transform: translateX(-640px);
+}
+
+.controls {
+    position: relative;
+    margin-top: 40px;
+    height: 40px;
+}
+
+.controls label {
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    display: none;
+    user-select: none;
+}
+
+.controls .prev {
+    left: 45%;
+}
+
+.controls .next {
+    right: 45%;
+}
+
+#s1:checked ~ .controls .next-1,
+#s2:checked ~ .controls .prev-2,
+#s2:checked ~ .controls .next-2,
+#s3:checked ~ .controls .prev-3 {
+    display: block;
+}
+
+
+.services h2 {
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+.cards {
+    display: flex;
     justify-content: center;
-    height: 1000px;
-
-    
-
+    gap: 30px;
+    flex-wrap: wrap;
 }
+
+
+.card p {
+    color: #555;
+    font-size: 15px;
+}
+
+h2{
+    padding-bottom: 20px;
+}
+.contact-body img{
+    width: 300px;
+}
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-header h1 {
+    font-size: 32px;
+}
+.contact-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.btn{
+    background-color: skyblue;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.site-footer {
+    background-color: #656D3F;
+    padding-top: 70px;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 80px 50px;
+}
+
+.footer-brand img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.footer-brand p {
+    color: white;
+    max-width: 420px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 12px;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #492828;
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 14px;
+}
+
+.about-us {
+    padding: 80px 60px;
+    background: #f9f9f9;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
