@@ -1,7 +1,7 @@
 import { Button } from 'antd';
 import './App.css'
-import Hello from './pages/dummy';
-import Side from './pages/sbar';
+import Hello from './api/posts';
+import Side from './api/sbar';
 
 
 function App(){
