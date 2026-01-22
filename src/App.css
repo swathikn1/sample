@@ -1,24 +1,21 @@
 .hello {
-    display: flex;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.app{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .sidebar {
-    width: 200px;
-    background-color: blue;
-    padding: 20px;
-    justify-content: center;
-    height: 1000px;
-
-    
-
+  width: 200px;
+  background-color: blue;
+  padding: 20px;
+  justify-content: center;
+  height: 1000px;
 }
