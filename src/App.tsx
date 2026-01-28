@@ -1,24 +1,18 @@
-import { Button } from 'antd';
-import './App.css'
-import Hello from './pages/dummy';
-import Side from './pages/sbar';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Login from "./routes/Login";
+import Home from "./routes/_ProtectedRoutes/home";
+import ProtectedRoute from "./routes/ProtectedRoute";
+import { Toaster } from "sonner";
 
-
-function App(){
-  return(
-    <div className='app'> 
-    <div className='hello'>
-      <Hello />
-      <h1 id='hello1'>Button</h1>
-      <Button type='primary'>Click Me</Button>
-</div>
-
-  <div className='sidebar'>
-    <Side />
-  </div>
-
-</div>
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/home" element={ <ProtectedRoute><Home/> </ProtectedRoute>}/>
+      </Routes>
+      <Toaster richColors position="top-center"/>
+    </BrowserRouter>
   );
 }
-
-export default App;
