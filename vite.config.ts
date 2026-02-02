@@ -7,9 +7,11 @@ import svgr from "vite-plugin-svgr"
 
 export default defineConfig({
   plugins: [react(),tailwindcss(),tanstackRouter(),svgr()],
+  base: "sample", 
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  
 })
