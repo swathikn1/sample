@@ -1,0 +1,98 @@
+{
+  "common": {
+    "language": "Language"
+  },
+
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "menu": "Menu",
+    "staff": "Staff",
+    "inventory": "Inventory",
+    "reports": "Reports",
+    "order":"Order/Table",
+    "reserve":"Reservation",
+    "profile":"Profile"
+  },
+  "dashboardPage":{
+    "dashboardTitle":"Dashboard",
+    "dailySales":"Daily Sales",
+    "monthlySales":"Monthly Sales",
+    "tableOccupancy":"Table Occupancy",
+    "tablesCount":"25 Tables",
+    "popularDishes":"Popular Dishes",
+    "seeAll":"See All",
+    "inStock": "In Stock",
+    "outStock": "Out of Stock",
+    "overview":"Overview",
+    "monthly":"Monthly",
+    "daily":"Daily",
+    "weekly":"Weekly",
+    "serving":"Serving",
+    "dish":"Chicken Parmesan",
+    "person":"Person",
+    "export":"Export"
+  },
+
+  "menuPage": {
+    "Menutitle": "Menu",
+    "categories": "Categories",
+    "addCategory": "Add New Category",
+    "specialMenu": "Special menu all items",
+    "normalMenu": "Normal Menu",
+    "specialDeals": "Special Deals",
+    "newYear": "New Year Special",
+    "desserts": "Desserts and Drinks",
+    "addMenuItem": "Add Menu Item"
+  },
+  "category":{
+    "all":"All",
+    "pizza":"Pizza",
+    "burger":"Burger",
+    "chicken":"Chicken",
+    "bakery":"Bakery",
+    "beverage":"Beverage",
+    "seafood":"Seafood"
+  },
+
+  "table": {
+    "product": "Product",
+    "productName": "Product Name",
+    "id": "ID",
+    "stock": "Stock",
+    "category": "Category",
+    "price": "Price",
+    "availability": "Availability",
+     "chicken":"Chicken"
+  },
+  "staff":{
+    "staffManage":"Staff Management",
+    "attendance":"attendance",
+    "staffTitle":"Staff",
+    "name":"Name"
+  },
+  "profile":{
+    "profileTitle":"Profile",
+    "personal":"Personal Information",
+    "myProfile":"My Profile",
+    "manageAccess":"Manage Access",
+    "logOut":"Logout",
+    "firstName":"First Name",
+    "email":"Email",
+    "address":"Address",
+    "newPassword":"New Password",
+    "confirmPassword":"Confirm Password",
+    "manager":"Manager",
+    "johnDoe":"John Doe",
+    "discardChanges":"Discard Changes",
+    "saveChanges":"Save Changes"
+  },
+   "staffTable":{
+    "watsonJoyce":"Watson Joyce",
+    "phone":"Phone",
+    "age":"Age",
+    "salary":"Salary",
+    "timings":"Timings",
+    "date":"Date"
+  }
+}
+

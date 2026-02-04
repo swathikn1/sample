@@ -9,37 +9,37 @@ import SeafoodIcon from '../assets/CategoryImage/seafood.svg'
 
 export const categoriesData=[
     {
-        title:"All",
+        title:"category.all",
         items:"116 items",
         img:AllIcon
     },
      {
-        title:"Pizza",
+        title:"category.pizza",
         items:"116 items",
         img:PizzaIcon
     },
      {
-        title:"Burger",
+        title:"category.burger",
         items:"116 items",
         img:BurgerIcon
     },
      {
-        title:"Chicken",
+        title:"category.chicken",
         items:"116 items",
         img:ChickenIcon
     },
      {
-        title:"Bakery",
+        title:"category.bakery",
         items:"116 items",
         img:BakeryIcon
     },
      {
-        title:"Beverage",
+        title:"category.beverage",
         items:"116 items",
         img:BeverageIcon
     },
      {
-        title:"Seafood",
+        title:"category.seafood",
         items:"116 items",
         img:SeafoodIcon
      }

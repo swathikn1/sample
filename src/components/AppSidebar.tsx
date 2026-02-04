@@ -1,5 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router"
 import { sidebarItems } from "./sidebar-data"
+import { useTranslation } from "react-i18next"
 
 import {
   Sidebar,
@@ -15,6 +16,7 @@ import {
 
 export function AppSidebar() {
   const { location } = useRouterState()
+  const { t } = useTranslation()
 
   return (
     <Sidebar className="text-white border-neutral-800 bg-black w-[138px]">
@@ -33,9 +35,8 @@ export function AppSidebar() {
                     isActive={location.pathname === item.to}>
                     <Link to={item.to} className="flex flex-col h-15 w-100 items-center ">
                       <img src={item.icon}
-                        alt={item.title}
                         className="h5 w-5"/>
-                      <span>{item.title}</span>
+                      <span>{t(item.title)}</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

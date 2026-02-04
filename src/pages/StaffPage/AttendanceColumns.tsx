@@ -3,7 +3,7 @@ import type { ColumnDef } from "@tanstack/react-table"
 import { Checkbox } from "../../components/ui/checkbox"
 import type { AttendanceType } from "../../data/AttendanceData"
 import { Button } from "../../components/ui/button"
-
+import {t} from '../../lib/utils'
 export const attendcol: ColumnDef<AttendanceType>[] = [
   {
     id: "select",
@@ -29,15 +29,15 @@ export const attendcol: ColumnDef<AttendanceType>[] = [
   },
   {
     accessorKey: "name",
-    header: "Name",
+    header:t("staff.name"),
   },
   {
     accessorKey: "date",
-    header: "Date",
+    header: t("staffTable.date"),
   },
   {
     accessorKey: "timings",
-    header: "Timings",
+    header:t("staffTable.timings"),
   },
 
     {

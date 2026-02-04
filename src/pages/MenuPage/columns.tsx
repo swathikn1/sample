@@ -2,6 +2,9 @@
 import type { ColumnDef } from "@tanstack/react-table"
 import { Checkbox } from "../../components/ui/checkbox"
 import type { Item } from "../../data/ItemsTable"
+import i18next from "i18next"
+import i18n from "../../i18n"
+import { t } from "../../lib/utils"
 
 export const columns: ColumnDef<Item>[] = [
   {
@@ -24,7 +27,7 @@ export const columns: ColumnDef<Item>[] = [
   },
   {
     accessorKey: "product",
-    header: "Product",
+    header: t("dashboardPage.dish"),
     cell: ({ row }) => (
       <div className="flex items-center gap-3">
         <img
@@ -36,27 +39,27 @@ export const columns: ColumnDef<Item>[] = [
   },
   {
     accessorKey: "name",
-    header: "Product Name",
+    header:  t("table.productName"),
   },
   {
     accessorKey: "id",
-    header: "ID",
+    header:"ID",
   },
   {
     accessorKey: "stock",
-    header: "Stock",
+    header:t("table.stock"),
   },
   {
     accessorKey:"category",
-    header:"Category",
+    header:t("table.category"),
   },
    {
     accessorKey:"price",
-    header:"Price",
+    header:t("table.price"),
   },
    {
     accessorKey:"availability",
-    header:"Availability",
+    header:t("table.availability"),
      cell:({row})=>(
       <div className="text-[#FAC1D9]">
         {row.original.availability}

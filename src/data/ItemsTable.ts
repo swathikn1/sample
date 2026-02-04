@@ -1,6 +1,7 @@
 import DishIcon from '../assets/DashboardImage/dish.svg'
 import EditIcon from '../assets/CategoryImage/edit.svg'
 import DeleteIcon from '../assets/CategoryImage/delete.svg'
+import i18n from '../i18n'
 
 export type Item = {
   product:string
@@ -18,68 +19,68 @@ export type Item = {
 export const Items:Item[]= [
   {
     product:DishIcon,
-    name:"Chicken Parmesan",
+    name:i18n.t("dashboardPage.dish"),
     id:101,
     stock:"119 items",
-    category:"Chicken",
+    category:i18n.t("table.chicken"),
     price:"$55",
-    availability:"In Stock",
+    availability:i18n.t("dashboardPage.inStock"),
     edit:EditIcon,
     delete:DeleteIcon
   },
   {
     product:DishIcon,
-    name: "Chicken Parmesan",
+    name:i18n.t("dashboardPage.dish"),
     id: 101,
     stock: "119 items",
-    category:"Chicken",
+    category:i18n.t("table.chicken"),
     price:"$55",
-    availability:"In Stock",
+    availability:i18n.t("dashboardPage.inStock"),
     edit:EditIcon,
     delete:DeleteIcon
     
   },
   {
     product:DishIcon,
-    name: "Chicken Parmesan",
+    name:i18n.t("dashboardPage.dish"),
     id: 101,
     stock: "119 items",
-    category:"Chicken",
+    category:i18n.t("table.chicken"),
     price:"$55",
-    availability:"In Stock",
+    availability:i18n.t("dashboardPage.inStock"),
     edit:EditIcon,
     delete:DeleteIcon
   },
   {
     product:DishIcon,
-    name: "Chicken Parmesan",
+    name:i18n.t("dashboardPage.dish"),
     id: 101,
     stock: "119 items",
-    category:"Chicken",
+    category:i18n.t("table.chicken"),
     price:"$55",
-    availability:"In Stock",
+    availability:i18n.t("dashboardPage.inStock"),
     edit:EditIcon,
     delete:DeleteIcon
   },
   {
     product:DishIcon,
-    name: "Chicken Parmesan",
+    name: i18n.t("dashboardPage.dish"),
     id: 101,
     stock: "119 items",
-    category:"Chicken",
+    category:i18n.t("table.chicken"),
     price:"$55",
-    availability:"In Stock",
+    availability:i18n.t("dashboardPage.inStock"),
     edit:EditIcon,
     delete:DeleteIcon
   },
   {
     product:DishIcon,
-    name: "Chicken Parmesan",
+    name:i18n.t("dashboardPage.dish"),
     id: 101,
     stock: "119 items",
-    category:"Chicken",
+    category:i18n.t("table.chicken"),
     price:"$55",
-    availability:"In Stock",
+    availability:i18n.t("dashboardPage.inStock"),
     edit:EditIcon,
     delete:DeleteIcon
   }

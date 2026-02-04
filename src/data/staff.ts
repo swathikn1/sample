@@ -1,3 +1,5 @@
+import i18n from '../i18n'
+
 export type StaffDataType = {
   id:number
   name:string
@@ -11,7 +13,7 @@ export type StaffDataType = {
 export const staffData:StaffDataType[]=[
     {
         id:101,
-        name:"Watson Joyce",
+        name:i18n.t("staffTable.watsonJoyce"),
         email:"watsonjoyce112@gmail.com",
         phone:+1234567890,
         age:45,
@@ -20,7 +22,7 @@ export const staffData:StaffDataType[]=[
     },
     {
         id:102,
-        name:"Watson Joyce",
+        name:i18n.t("staffTable.watsonJoyce"),
         email:"watsonjoyce112@gmail.com",
         phone:+1234567890,
         age:45,
@@ -29,7 +31,7 @@ export const staffData:StaffDataType[]=[
     },
     {
         id:103,
-        name:"Watson Joyce",
+        name:i18n.t("staffTable.watsonJoyce"),
         email:"watsonjoyce112@gmail.com",
         phone:+1234567890,
         age:45,
@@ -38,7 +40,7 @@ export const staffData:StaffDataType[]=[
     },
     {
         id:104,
-        name:"Watson Joyce",
+        name:i18n.t("staffTable.watsonJoyce"),
         email:"watsonjoyce112@gmail.com",
         phone:+1234567890,
         age:45,
@@ -47,7 +49,7 @@ export const staffData:StaffDataType[]=[
     },
     {
         id:105,
-        name:"Watson Joyce",
+        name:i18n.t("staffTable.watsonJoyce"),
         email:"watsonjoyce112@gmail.com",
         phone:+1234567890,
         age:45,

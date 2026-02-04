@@ -2,6 +2,7 @@
 import type { ColumnDef } from "@tanstack/react-table"
 import { Checkbox } from "../../components/ui/checkbox"
 import type { StaffDataType } from "../../data/staff"
+import { t } from "../../lib/utils"
 
 export const staffcol: ColumnDef<StaffDataType>[] = [
   {
@@ -28,27 +29,27 @@ export const staffcol: ColumnDef<StaffDataType>[] = [
   },
   {
     accessorKey: "name",
-    header: "Name",
+    header:t("staff.name"),
   },
   {
     accessorKey: "email",
-    header: "Email",
+    header:t("profile.email"),
   },
   {
     accessorKey: "phone",
-    header: "Phone",
+    header: t("staffTable.phone"),
   },
   {
     accessorKey:"age",
-    header:"Age",
+    header: t("staffTable.age"),
   },
    {
     accessorKey:"salary",
-    header:"Salary",
+    header: t("staffTable.salary"),
   },
    {
     accessorKey:"timings",
-    header:"Timings",
+    header: t("staffTable.timings"),
   }
  
 ]

@@ -8,42 +8,42 @@ import ReserveIcon from "../assets/SidebarImage/reserve.svg"
 
 export const sidebarItems = [
   {
-    title: "Dashboard",
+    title: "sidebar.dashboard",
     to:"/",
     icon:DashboardIcon,
   },
   {
-    title: "Menu",
+    title: "sidebar.menu",
     to: "/menu",
     icon: MenuIcon,
   },
   {
-    title: "Staff",
+    title: "sidebar.staff",
     to: "/staff",
     icon: StaffIcon,
   },
   {
-    title: "Inventory",
+    title: "sidebar.inventory",
     to: "/inventory",
     icon: InventoryIcon,
   },
   {
-    title: "Reports",
+    title: "sidebar.reports",
     to: "/reports",
     icon: ReportsIcon,
   },
   {
-    title: "Order/Table",
+    title: "sidebar.order",
     to:'/order',
     icon:OrderIcon
   },
   {
-    title:"Reservation",
+    title:"sidebar.reserve",
     to:'/reserve',
     icon: ReserveIcon
   },
   {
-    title:"Profile",
+    title:"sidebar.profile",
     to:'/profile',
     icon:DashboardIcon
   }

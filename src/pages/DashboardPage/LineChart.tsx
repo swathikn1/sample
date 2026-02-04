@@ -15,6 +15,7 @@ import {
 } from "../../components/ui/chart"
 import { Button } from "../../components/ui/button"
 import ExportIcon from "../../assets/DashboardImage/export.svg"
+import { useTranslation } from "react-i18next"
 
 export const description = "A multiple line chart"
 const chartData = [
@@ -38,17 +39,18 @@ const chartConfig = {
 } satisfies ChartConfig
 
 export function ChartLineMultiple() {
+  const {t}=useTranslation()
   return (
     <Card className="w-[1150px] h-[522px]">
       <div className="flex flex-row ">
       <CardHeader>
-        <CardTitle className="font-medium text-[25px]">Overview</CardTitle>
+        <CardTitle className="font-medium text-[25px]">{t('dashboardPage.overview')}</CardTitle>
       </CardHeader>
          <CardContent className="flex flex-row gap-2 justify-end ml-[638px]">
-        <Button className="bg-[#292C2D] hover:bg-[#FAC1D9] hover:text-black font-medium text-16">Monthly</Button>
-        <Button className="bg-[#292C2D] hover:bg-[#FAC1D9] hover:text-black font-medium text-16">Daily</Button>
-        <Button className="bg-[#292C2D] hover:bg-[#FAC1D9] hover:text-black font-medium text-16">Weekly</Button>
-        <Button className="bg-[#292C2D] w-[119.88px] h-[52.18px] text-[#FAC1D9] border-2 border-[#FAC1D9] font-medium text-16"><span><img src={ExportIcon}></img></span>Export</Button>
+        <Button className="bg-[#292C2D] hover:bg-[#FAC1D9] hover:text-black font-medium text-16">{t('dashboardPage.monthly')}</Button>
+        <Button className="bg-[#292C2D] hover:bg-[#FAC1D9] hover:text-black font-medium text-16">{t('dashboardPage.daily')}</Button>
+        <Button className="bg-[#292C2D] hover:bg-[#FAC1D9] hover:text-black font-medium text-16">{t('dashboardPage.weekly')}</Button>
+        <Button className="bg-[#292C2D] w-[119.88px] h-[52.18px] text-[#FAC1D9] border-2 border-[#FAC1D9] font-medium text-16"><span><img src={ExportIcon}></img></span>{t('dashboardPage.export')}</Button>
         </CardContent>
 
         </div>

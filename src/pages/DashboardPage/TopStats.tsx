@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   Card,
   CardAction,
@@ -15,12 +16,13 @@ type TopStatsType = {
 }
 
 export default function TopStats({title,price,img,footer,line}:TopStatsType) {
+  const {t}=useTranslation()
   return (
 <Card className="w-[369.23px] h-[200px] shrink-0 font-bold">
   <CardHeader className="pb-2">
     <div className="flex items-center justify-between">
       <div>
-        <CardTitle className="font-light font-[poppins] text-[16px]">{title}</CardTitle>
+        <CardTitle className="font-light font-[poppins] text-[16px]">{t(title)}</CardTitle>
         <CardDescription className="font-medium text-[25px]">{price}</CardDescription>
       </div>
       <CardAction>

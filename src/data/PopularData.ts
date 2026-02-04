@@ -1,32 +1,34 @@
 import DishIcon from '@/assets/DashboardImage/dish.svg'
+import { t } from 'i18next'
+
 
 export const popularData=[
     {
     img:DishIcon,
-    dish:"Chicken Parmesan",
+    dish: "dashboardPage.dish",
     serving: "Serving: 01 Person",
-    stock: "In Stock",
+    stock: "dashboardPage.inStock",
     price:"$55"
 },
   {
     img:DishIcon,
-    dish:"Chicken Parmesan",
+    dish:"dashboardPage.dish",
     serving: "Serving: 03 Person",
-    stock: "Out of Stock",
+    stock: "dashboardPage.outStock",
     price:"$55"
 },
   {
     img:DishIcon,
-    dish:"Chicken Parmesan",
+    dish:"dashboardPage.dish",
     serving: "Serving: 02 Person",
-    stock: "Out of Stock",
+    stock: "dashboardPage.outStock",
     price:"$55"
 },
   {
     img:DishIcon,
-    dish:"Chicken Parmesan",
+    dish:"dashboardPage.dish",
     serving: "Serving: 01 Person",
-    stock: "In Stock",
+    stock: "dashboardPage.outStock",
     price:"$55"
 }
 ]

@@ -3,15 +3,17 @@ import { topStatsData } from "../../data/TopstatsData"
 import Arrow from '../../assets/DashboardImage/arrow.svg'
 import PopularDishesCard from "../DashboardPage/PopularDishCard"
 import { ChartLineMultiple } from "../DashboardPage/LineChart"
+import { useTranslation } from "react-i18next"
 
 
 export default function Dashboard() {
+  const { t } = useTranslation()
 
   return (
     <>
     <div className="flex flex-row gap-4 mt-4">
     <img src={Arrow} alt="title" className="w-8 h-8 ml-[-82px]"></img>
-      <h1 className="text-white text-xl mt-[3px]">Dashboard</h1>
+      <h1 className="text-white text-xl mt-[3px]">{t("dashboardPage.dashboardTitle")}</h1>
       </div>
       <div className="flex flex-row gap-4 mt-6 ml-[-32px]">
         {topStatsData.map((item, index) => (

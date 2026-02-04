@@ -1,0 +1,93 @@
+{
+"sidebar": {
+    "dashboard": "ダッシュボード",
+    "menu": "メニュー",
+    "staff": "スタッフ",
+    "inventory": "在庫",
+    "reports": "レポート",
+    "order": "注文／テーブル",
+    "reserve": "予約",
+    "profile": "プロフィール"
+  },
+"dashboardPage": {
+    "dashboardTitle": "ダッシュボード",
+    "dailySales": "日次売上",
+    "monthlySales": "月次売上高",
+    "tableOccupancy": "テーブル稼働率",
+    "tablesCount": "25テーブル",
+    "popularDishes": "人気メニュー",
+    "seeAll": "すべて表示",
+    "inStock": "在庫あり",
+    "outStock": "在庫切れ",
+    "overview": "概要",
+    "monthly": "月間",
+    "daily": "日間",
+    "weekly": "週間",
+    "serving": "提供中",
+    "dish": "チキンパルメザン",
+    "person": "人",
+    "export": "エクスポート"
+  },
+
+  "menuPage": {
+    "categories": "カテゴリー",
+    "addCategory": "新しいカテゴリーを追加",
+    "specialMenu": "スペシャルメニュー（全商品）",
+    "normalMenu": "通常メニュー",
+    "specialDeals": "特別セール",
+    "newYear": "お正月スペシャル",
+    "desserts": "デザート＆ドリンク",
+    "addMenuItem": "メニュー項目を追加"
+  },
+  "category": {
+  "all": "すべて",
+  "pizza": "ピザ",
+  "burger": "バーガー",
+  "chicken": "チキン",
+  "bakery": "ベーカリー",
+  "beverage": "ドリンク",
+  "seafood": "シーフード"
+},
+  "table": {
+    "product": "商品",
+    "productName": "商品名",
+    "id": "ID",
+    "stock": "在庫",
+    "category": "カテゴリー",
+    "price": "価格",
+    "availability": "在庫状況",
+    "chicken":"チキン"
+  },
+
+  "staff": {
+    "staffManage": "スタッフ管理",
+    "attendance": "出勤状況",
+    "staffTitle": "スタッフ",
+    "name": "名前"
+  },
+
+  "profile": {
+    "profileTitle":"プロフィール",
+    "personal": "個人情報",
+    "myProfile": "マイプロフィール",
+    "manageAccess": "アクセス管理",
+    "logOut": "ログアウト",
+    "firstName": "ファーストネーム",
+    "email":"電子メール",
+    "address":"住所",
+    "newPassword":"新しいパスワード",
+    "confirmPassword":"パスワードを認証する",
+    "manager":"マネージャー",
+    "johnDoe":"ジョン・ドウ",
+    "discardChanges":"変更の破棄",
+    "saveChanges":"変更を保存"
+  },
+  "staffTable":{
+    "watsonJoyce":"ワトソン・ジョイス",
+    "phone":"電話",
+    "age":"年",
+    "salary":"給料",
+    "timings":"タイミング",
+    "date":"日付"
+  }
+}

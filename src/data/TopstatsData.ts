@@ -6,21 +6,21 @@ import LineIcon2 from '../assets/DashboardImage/line2.svg'
 
 export const topStatsData = [
   {
-    title: "Daily Sales",
+    title: "dashboardPage.dailySales",
     price: "$2K",
     img: Card1,
     footer: "9 February 2024",
     line: LineIcon1
   },
   {
-    title: "Monthly Sales",
+    title: "dashboardPage.monthlySales",
     price: "$55K",
     img: Card2,
     footer: "1 Jan - 1 Feb",
     line: LineIcon2
   },
   {
-    title: "Table Occupancy",
+    title: "dashboardPage.tableOccupancy",
     price: "25 Tables",
     img: Card3,
     footer: "",
